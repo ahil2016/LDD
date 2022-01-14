@@ -1,0 +1,76 @@
+<style>
+/*Star : Code to enabling spotfire funtionalities */ 
+
+.sfc-style-root .sf-element-panel-area {
+z-index: 1;
+}
+
+.sf-element-document .sf-element-page .sf-element-data-overview.sf-dataoverview-dropshadow.sfpc-left{
+
+z-index: 1;
+}
+
+.sfc-style-root .sf-element-scroll-bar {
+
+display:none !important;
+}
+
+/*END : Code to enabling spotfire funtionalities */ 
+
+/*Star : Title Code Starts */ 
+
+	.main-title-wrapper {
+		display: flex;
+		position: fixed;
+		top: 30px;
+		left: 0px;
+		width: 100%;
+		z-index: 1;
+		background-color: #fff;
+		border-bottom: 2px solid #ccc;
+		padding: 8px 32px;
+		
+	}
+	.main-title-wrapper .title h2 {
+		margin: 8px;
+		color:#404040;
+
+	}
+	.main-title-wrapper .title {
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+
+	.main-title-wrapper .main-logo {
+		height: 50px;
+	}
+	
+	.main-title-wrapper .main-logo img {
+		height: 80%;
+		width: auto;
+	}
+
+	.main-title-wrapper .switch-placeholder{
+		margin-right:60px;
+		margin-top:8px;
+	}
+
+</style>
+
+<div class="main-title-wrapper">
+	<div class="main-logo">
+	<! --- Start : Insert Logo ---> 
+		
+	<img src="703f1db2fdcd44e39b8ce53c84400065.png" style="border: 0;" width="50" height="50"/>
+	<! --- End : Inserting Logo ---> 
+	</div>
+	<div class="title">
+		<h2>Enterprise Solutions Executive Metrics Dashboard</h2>
+	</div>
+	
+	<div class="switch-placeholder"> SwitchButton  </div>
+	
+</div>
+
