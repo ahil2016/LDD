@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .switch-container {
+            width: 115px;
+            height: 20px;
+            border: 5px solid #000;
+            border-radius: 40px;
+            display: flex;
+            
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .switch-toggle {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: aqua;
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            
+	    transition: 0.3s;
+
+        }
+	#switch-BubyMetrics.on .switch-toggle {
+           
+            left: 96px;
+           
+
+        }
+
+        .switch-text {
+            display: inline-block;
+
+        }
+	.switch-text1 {
+            margin-left:auto;
+	    margin-right:5px;
+
+        }
+	.switch-text2 {
+            display: none;
+	    margin-right:auto;
+	    margin-left:5px;
+
+        }
+
+	.switch-container.on .switch-text1{
+		display:none;
+	}
+	.switch-container.on .switch-text2{
+		display:inline-block;
+		margin-right:auto;
+	}
+	#nav-metricsbyBu{
+		display:none;
+	}
+    </style>
+</head>
+
+<body>
+    <div id="switch-BubyMetrics" class="switch-container on">
+        <div class="switch-toggle">
+        </div>
+        <div class="switch-text switch-text1">
+            BU by Metrics
+        </div>
+	<div class="switch-text switch-text2">
+             Metrics by BU
+        </div>
+    </div>
+
+<div id="nav-metricsbyBu">
+<SpotfireControl id="e9feedc57fa54b9c8479d3bf192ca3f1" />
+</div>
+</body>
+
+<script>
+
+$("#switch-BubyMetrics").click(function(){
+  $("#switch-BubyMetrics").toggleClass("on");
+  
+  setTimeout(function(){
+ 	$("#nav-metricsbyBu a").click();
+}, 400); //Time before execution
+});
+
+
+</script>
+
+</html>
+
