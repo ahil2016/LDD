@@ -1,0 +1,212 @@
+<style>
+	
+
+	.navlist {
+		background-color: #fff;
+		margin: 0px;
+		display: flex;
+		
+		padding: 8px 0px;
+		position: fixed;
+		top: 12px;
+		left: 0px;
+		z-index: 1;
+		width: 100%;
+
+	}
+
+	.navlist li {
+		margin: 0px;
+		list-style-type: none;
+		position: relative;
+	}
+
+	.navlist li a {
+		margin: 0px;
+		color: #707070 !important;
+
+	}
+
+	.navlist li a:hover {
+		color: #707070 !important;
+		text-decoration: none;
+		//border-bottom: 2px solid #0097d1;
+
+	}
+
+	.menu-arrow {
+		fill: #707070;
+		margin-left: 4px;
+		transform: rotate(270deg);
+		transition: transform .45s ease 0s;
+	}
+
+	.navlist li:hover .menu-arrow {
+		fill: #707070;
+		transform: rotate(90deg);
+	}
+
+	.listitem {
+		border: 1px solid #707070;
+		padding: 2px 10px;
+	}
+
+	.listitem:last-child {
+		border-right: 1px solid #707070;
+		margin-right: 28px;
+	}
+	.listitem:first-child{
+		margin-left: 30px;
+	}
+
+	.dropdown-links {
+		max-height: 0px;
+		position: absolute;
+		top: 29px;
+		left: 0px;
+		z-index: 9999;
+		overflow: hidden;
+		transition: max-height .45s ease 0s;
+		box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+	.dropdown-links.left {
+		
+		top: 29px;
+		left: -100px;
+		
+	}
+
+	.navlist li:hover .dropdown-links {
+		max-height: 1000px;
+	}
+
+	.dropdown-links ul {
+		padding: 16px;
+		background: #fff;
+		min-width: 231px;
+		padding: 0px;
+
+	}
+
+	.dropdown-links ul li {
+
+		color: #707070 !important;
+		cursor: pointer;
+		//padding: 8px 16px;
+	}
+
+	.dropdown-links ul li a {
+
+		display: flex;
+		padding: 8px 16px;
+
+
+	}
+
+
+
+	.dropdown-links ul li:hover {
+		background-color: #ddd;
+		color: #fff !important;
+
+	}
+
+	.navlink {
+
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.navlist .date-li {
+		margin-right: auto;
+		margin-left: 30px;
+		margin-top: auto;
+		color: #000;
+		font-size: 12px;
+	}
+
+	.navlist li:nth-child(2) {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.active-menu {
+		border-bottom: 2px solid #3D88FC;
+	}
+
+	.display-none {
+		display: none;
+		display: inline-block;
+	}
+</style>
+
+
+	
+
+<ul class='navlist'>
+	
+	<li class='listitem'>
+		<a class='navlink' href='#'>
+			<span>Finance</span><span><svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg"
+					class="menu-arrow">
+					<path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" class="_2JzwqO"></path>
+				</svg></span></a>
+		<div class="dropdown-links">
+			<ul>
+				<li>
+					<SpotfireControl id="8a669f8f5f72446aa7bce708d1fbcbbf" />
+				</li>
+				<li>
+					<SpotfireControl id="fb31f347ff4642da90fc6a5b825a49b9" />
+				</li>
+
+				<ul>
+		</div>
+	</li>
+	<li class='listitem'>
+		<a class='navlink' href='#'><span>HR Metrics</span><span><svg width="4.7" height="8" viewBox="0 0 16 27"
+					xmlns="http://www.w3.org/2000/svg" class="menu-arrow">
+					<path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" class="_2JzwqO"></path>
+				</svg></span></a>
+		<div class="dropdown-links">
+			<ul>
+				<li>
+					fsdd
+				</li>
+
+				<li>
+					aasa
+				</li>
+
+				<ul>
+		</div>
+
+	</li>
+
+	<li class='listitem'>
+		<a class='navlink' href='#'>
+			<span>QA Metrics</span><span><svg width="4.7" height="8" viewBox="0 0 16 27"
+					xmlns="http://www.w3.org/2000/svg" class="menu-arrow">
+					<path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" class="_2JzwqO"></path>
+				</svg></span></a>
+		<div class="dropdown-links left">
+			<ul>
+				<li>
+					Link1
+				</li>
+				<li>
+					anc
+				</li>
+				<li>
+					ddd
+				</li>
+				<li>
+					fe
+				</li>
+				<ul>
+		</div>
+
+	</li>
+
+
+
