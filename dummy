@@ -1,1 +1,66 @@
-https://codepen.io/berke-kir/pen/xxVeaEZ
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .switch-container {
+            width: 170px;
+            height: 50px;
+            border: 0px solid #000;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            background-color: #ccc;
+            background-image: linear-gradient(to right bottom, #3e4042);
+            box-shadow: 0px 10px 13px -7px #9b9696, 5px 5px 15px 5px rgba(0,0,0,0);
+            transform: scale(1.0);
+            top:0;
+            }
+
+        .switch-container-inner-container{
+            width: 148px;
+            height: 38px;
+            border: 0px solid #000;
+            border-radius: 40px;
+            background-color: #828080;
+            box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.8);
+            transform: scale(1.0);
+            
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="switch-container">
+        <div class="switch-container-inner-container"></div>
+
+    </div>
+    
+        
+</body>
+
+<script>
+
+    $("#switch-BubyMetrics").click(function () {
+        $("#switch-BubyMetrics").toggleClass("on");
+
+        setTimeout(function () {
+            $("#nav-metricsbyBu a").click();
+        }, 400); //Time before execution
+    });
+
+
+</script>
+
+</html>
