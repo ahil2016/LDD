@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .utl-title-container{
+           display: flex;
+           border: 1px solid #ccc;
+           width:400px;
+           height: 30px;
+           align-items: center;
+        }
+        .utl-value{
+            margin-left: auto;
+            margin-right: 32px;
+            border: 1px solid #000;
+        }
+        .utilization-title{
+            margin-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="utl-title-container">
+    <div class="utilization-title">Utilization</div>
+    <div class="utl-value">Value</div>
+</div>
+</body>
+</html>
